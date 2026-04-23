@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+paper_state.json
+daemon_state.json
+blacklist.json
+paper_trades.csv
+paper_equity.csv
+paper_report_summary.csv
+paper_report_daily.csv
+research_results.csv
+data/
