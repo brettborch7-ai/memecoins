@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  memecoin-bot:
+    build: .
+    container_name: memecoin-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      - TZ=UTC
+      - DATA_DIR=/app/data
+    volumes:
+      - ./data:/app/data
+    command: ["python", "run_all.py"]
